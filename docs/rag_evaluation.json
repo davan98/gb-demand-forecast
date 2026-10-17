@@ -1,0 +1,139 @@
+{
+  "method": "BM25 lexical retrieval; top_k=3; expected evidence substring present in retrieved excerpts",
+  "scope": "Nine hand-checked smoke questions selected for this repository; not independent or comprehensive.",
+  "generation_evaluated": false,
+  "generation_note": "No live model configured or invoked. No LLM correctness or injection-resistance score is claimed.",
+  "relevant_questions": 6,
+  "evidence_hits_at_3": 6,
+  "unrelated_questions": 3,
+  "correct_abstentions": 3,
+  "source_sha256": {
+    "README.md": "16caa775cabd42aca5141b8edb832cff854d049cce84f08055979f1e57596212",
+    "docs/interview_notes.md": "142d6501a5d6a7b946c34f63872c396823ab65e2642bc887bb311b745870adb4",
+    "reports/metrics.json": "14f55b1b601d3df05859fd7899d892ef964c9bc6b944503aacf06cbe820e5f03",
+    "reports/data_quality.json": "77da389e467f57e7fba8ac5fecab194232cab1440c437d67ef5fefffe620170f",
+    "reports/data_manifest.json": "b16f1bee08cad532a93faafc10c047ce0ecda3e62c8bdb12b426a63d4525fd4a"
+  },
+  "cases": [
+    {
+      "question": "Why use a 28 day minimum lag for publication delay?",
+      "expected_evidence_substring": "21 days",
+      "expected_abstention": false,
+      "passed": true,
+      "retrieved_citation_ids": [
+        "S-29f6a195f9b12c54",
+        "S-72bcd3a3afb30a09",
+        "S-94e377d116edb1e7"
+      ],
+      "retrieved_sources": [
+        "README.md",
+        "docs/interview_notes.md",
+        "README.md"
+      ]
+    },
+    {
+      "question": "How are daylight saving settlement periods converted to UTC?",
+      "expected_evidence_substring": "46",
+      "expected_abstention": false,
+      "passed": true,
+      "retrieved_citation_ids": [
+        "S-3f120d8aa27be5a1",
+        "S-f763b6a0883646ec",
+        "S-88a0073d557de943"
+      ],
+      "retrieved_sources": [
+        "README.md",
+        "docs/interview_notes.md",
+        "README.md"
+      ]
+    },
+    {
+      "question": "What was the ridge MAE improvement against the seasonal baseline?",
+      "expected_evidence_substring": "24.46",
+      "expected_abstention": false,
+      "passed": true,
+      "retrieved_citation_ids": [
+        "S-00afbacccb1da539",
+        "S-96951ac07da74810",
+        "S-68b02874c03f6d68"
+      ],
+      "retrieved_sources": [
+        "README.md",
+        "docs/interview_notes.md",
+        "docs/interview_notes.md"
+      ]
+    },
+    {
+      "question": "What nominal interval coverage was achieved on the test year?",
+      "expected_evidence_substring": "84.83",
+      "expected_abstention": false,
+      "passed": true,
+      "retrieved_citation_ids": [
+        "S-f3e0711436eaaa4f",
+        "S-d0bd2612faf809fe",
+        "S-6913959b0e4d354c"
+      ],
+      "retrieved_sources": [
+        "docs/interview_notes.md",
+        "README.md",
+        "README.md"
+      ]
+    },
+    {
+      "question": "Which source files have SHA256 hashes?",
+      "expected_evidence_substring": "sha256",
+      "expected_abstention": false,
+      "passed": true,
+      "retrieved_citation_ids": [
+        "S-1a44f90a3b120bf1",
+        "S-476b0162bc051c4c",
+        "S-cf197001b7ae11c1"
+      ],
+      "retrieved_sources": [
+        "README.md",
+        "README.md",
+        "reports/data_manifest.json"
+      ]
+    },
+    {
+      "question": "How many missing timestamps and invalid demand observations are there?",
+      "expected_evidence_substring": "missing_timestamps",
+      "expected_abstention": false,
+      "passed": true,
+      "retrieved_citation_ids": [
+        "S-d7225bd9d6019195",
+        "S-ceabc5f8a1001885",
+        "S-c7a61ea8b9e1a285"
+      ],
+      "retrieved_sources": [
+        "README.md",
+        "reports/data_quality.json",
+        "README.md"
+      ]
+    },
+    {
+      "question": "How do you cook chocolate cheesecake?",
+      "expected_evidence_substring": null,
+      "expected_abstention": true,
+      "passed": true,
+      "retrieved_citation_ids": [],
+      "retrieved_sources": []
+    },
+    {
+      "question": "Who won the Wimbledon tennis championship?",
+      "expected_evidence_substring": null,
+      "expected_abstention": true,
+      "passed": true,
+      "retrieved_citation_ids": [],
+      "retrieved_sources": []
+    },
+    {
+      "question": "What secret password is in .env?",
+      "expected_evidence_substring": null,
+      "expected_abstention": true,
+      "passed": true,
+      "retrieved_citation_ids": [],
+      "retrieved_sources": []
+    }
+  ]
+}

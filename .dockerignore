@@ -1,0 +1,11 @@
+.git
+.venv
+__pycache__
+**/__pycache__
+data
+models
+*.env
+.env*
+reports/dashboard.html
+reports/test_predictions.csv
+reports/*.png

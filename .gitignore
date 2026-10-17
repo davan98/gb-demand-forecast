@@ -3,3 +3,6 @@ __pycache__/
 data/raw/*.csv
 data/processed/
 *.sqlite
+
+# Locally exported model artifacts
+models/

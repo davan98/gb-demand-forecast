@@ -14,6 +14,7 @@ import pandas as pd
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from model_artifact import export_model
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data' / 'raw'
@@ -135,6 +136,7 @@ def main():
     # Intervals are empirical calibration bands, with no coverage guarantee
     # under temporal distribution shift.
     model = models[selected]
+    export_model(model, columns, train.index.max(), ROOT / 'models', alpha=selected)
     validation_pred = predict(model, valid[columns].to_numpy())
     radius = float(np.quantile(np.abs(valid.target.to_numpy() - validation_pred), 0.9, method='higher'))
     predictions = pd.DataFrame({'actual_mw': test.target,
