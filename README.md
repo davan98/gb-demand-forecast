@@ -62,12 +62,23 @@ Important limits:
 3. No weather, holiday features, operational live feed, scheduled deployment or future forecasting service is included. The dashboard displays historical evaluation.
 4. The final test year has now been inspected. Further tuning against 2025 would turn it into development data; a subsequent model needs a fresh holdout.
 
+## Model serving and project assistant
+
+The repository also includes a local inference API and a source-citing project assistant. Run `python src/pipeline.py` to export the fitted ridge model, then `python src/api.py` to serve it on localhost. GET `/health` exposes readiness and feature names; POST `/predict` accepts validated feature rows. POST `/retrieve` searches the documented evidence, and `/ask` optionally uses a local Ollama model to generate cited answers. Without a configured local model, `/ask` explicitly returns retrieval-only excerpts.
+
+These additions demonstrate model-serving and retrieval engineering. They do not establish public cloud deployment, live forecast performance, production readiness or real-model answer accuracy. See [the setup, limitations and interview guide](docs/serving_and_rag.md). The Dockerfile packages the local service; Docker must be available to build and run it.
+
 ## Repository guide
 
 ```text
 src/pipeline.py          Download, audit, features, ridge, evaluation and plots
 src/build_dashboard.py   Build the standalone local dashboard
+src/model_artifact.py    Versioned model export and validated loading
+src/api.py               Local prediction and project-assistant API
+src/rag.py               Allowlisted retrieval and optional local generation
 tests/test_pipeline.py  Leakage, clock-change, missing-data and numerical checks
+tests/test_api.py        Model artifact and HTTP validation checks
+tests/test_rag.py        Retrieval, citations and generation-failure checks
 reports/metrics.json     Machine-readable validation and test results
 reports/data_quality.json
 reports/data_manifest.json
