@@ -1,0 +1,33 @@
+{
+  "checked_at_utc": "2026-10-17T14:49:44.781095+00:00",
+  "files": [
+    {
+      "year": 2022,
+      "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/bb44a1b5-75b1-4db2-8491-257f23385006/download/demanddata_2022.csv",
+      "resource_id": "bb44a1b5-75b1-4db2-8491-257f23385006",
+      "sha256": "fc6bd5d5a8e8b9094ae748ae6f62d688797577ca3be8e66acbffdda771a5b6c4",
+      "bytes": 1682356
+    },
+    {
+      "year": 2023,
+      "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/bf5ab335-9b40-4ea4-b93a-ab4af7bce003/download/demanddata_2023.csv",
+      "resource_id": "bf5ab335-9b40-4ea4-b93a-ab4af7bce003",
+      "sha256": "cb6f7b91dd6a5defbdd918e3db440b8e6cec5855ef18a8715bb8e294b50cfa23",
+      "bytes": 1732679
+    },
+    {
+      "year": 2024,
+      "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/f6d02c0f-957b-48cb-82ee-09003f2ba759/download/demanddata_2024.csv",
+      "resource_id": "f6d02c0f-957b-48cb-82ee-09003f2ba759",
+      "sha256": "fa7895b6e9ab5eb1b450949d969cb18ffeb6005359fc71c79c87e1c47e59cac6",
+      "bytes": 1809707
+    },
+    {
+      "year": 2025,
+      "url": "https://api.neso.energy/dataset/8f2fe0af-871c-488d-8bad-960426f24601/resource/b2bde559-3455-4021-b179-dfe60c0337b0/download/demanddata_2025.csv",
+      "resource_id": "b2bde559-3455-4021-b179-dfe60c0337b0",
+      "sha256": "8b8be946bbb084bc28fbf95a71fad0fceb5543b98e02755235130a42beaee4e0",
+      "bytes": 1869771
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "source_rows": 70128,
+  "missing_timestamps": 0,
+  "missing_or_invalid_demand": 0,
+  "nonpositive_demand": 0,
+  "days_by_period_count": {
+    "46": 4,
+    "48": 1453,
+    "50": 4
+  },
+  "start_utc": "2022-01-01 00:00:00+00:00",
+  "end_utc": "2025-12-31 23:30:00+00:00"
+}

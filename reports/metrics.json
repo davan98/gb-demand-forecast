@@ -1,0 +1,104 @@
+{
+  "train_rows": 32688,
+  "validation_rows": 17568,
+  "test_rows": 17520,
+  "selected_alpha": 1000,
+  "validation_trials": [
+    {
+      "alpha": 0.1,
+      "mae_mw": 1830.1414373228843,
+      "rmse_mw": 2403.3042625546045,
+      "wape_percent": 6.9622168345515965
+    },
+    {
+      "alpha": 1,
+      "mae_mw": 1830.0993934465043,
+      "rmse_mw": 2403.262450439527,
+      "wape_percent": 6.962056891402968
+    },
+    {
+      "alpha": 10,
+      "mae_mw": 1829.689481161073,
+      "rmse_mw": 2402.852749087494,
+      "wape_percent": 6.960497504704147
+    },
+    {
+      "alpha": 100,
+      "mae_mw": 1826.2998283597178,
+      "rmse_mw": 2399.4992929219425,
+      "wape_percent": 6.947602600892013
+    },
+    {
+      "alpha": 1000,
+      "mae_mw": 1818.560259676145,
+      "rmse_mw": 2395.946884744317,
+      "wape_percent": 6.918159764244503
+    }
+  ],
+  "test_metrics": {
+    "seasonal_28d": {
+      "mae_mw": 2806.7841324200913,
+      "rmse_mw": 3715.115032742169,
+      "wape_percent": 10.73008770579724
+    },
+    "weekly_mean": {
+      "mae_mw": 3001.354081050228,
+      "rmse_mw": 3921.205371315555,
+      "wape_percent": 11.47391142547664
+    },
+    "ridge": {
+      "mae_mw": 2120.191264486055,
+      "rmse_mw": 2800.619806112211,
+      "wape_percent": 8.10530384514642
+    }
+  },
+  "ridge_mae_improvement_vs_best_baseline_percent": 24.461904996663776,
+  "empirical_interval_target": 0.9,
+  "test_interval_coverage": 0.8482876712328767,
+  "interval_half_width_mw": 3921.264535351529,
+  "feature_columns": [
+    "lag_28d",
+    "lag_35d",
+    "lag_42d",
+    "lag_49d",
+    "recent_available_mean",
+    "recent_available_std",
+    "hour_sin_1",
+    "hour_cos_1",
+    "hour_sin_2",
+    "hour_cos_2",
+    "hour_sin_3",
+    "hour_cos_3",
+    "hour_sin_4",
+    "hour_cos_4",
+    "year_sin_1",
+    "year_cos_1",
+    "year_sin_2",
+    "year_cos_2",
+    "weekday_0",
+    "weekday_hour_sin_0",
+    "weekday_hour_cos_0",
+    "weekday_1",
+    "weekday_hour_sin_1",
+    "weekday_hour_cos_1",
+    "weekday_2",
+    "weekday_hour_sin_2",
+    "weekday_hour_cos_2",
+    "weekday_3",
+    "weekday_hour_sin_3",
+    "weekday_hour_cos_3",
+    "weekday_4",
+    "weekday_hour_sin_4",
+    "weekday_hour_cos_4",
+    "weekday_5",
+    "weekday_hour_sin_5",
+    "weekday_hour_cos_5",
+    "weekday_6",
+    "weekday_hour_sin_6",
+    "weekday_hour_cos_6",
+    "is_dst"
+  ],
+  "model_training_end": "2023-12-31 23:30:00+00:00",
+  "test_start": "2025-01-01 00:00:00+00:00",
+  "test_end": "2025-12-31 23:30:00+00:00"
+}
